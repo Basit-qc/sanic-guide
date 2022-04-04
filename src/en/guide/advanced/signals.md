@@ -13,7 +13,7 @@ async def handle_registration(request):
     await request.app.dispatch(
         "user.registration.created",
         context={"email": request.json.email}
-    })
+    )
 ```
 
 ## Adding a signal
